@@ -1,0 +1,94 @@
+/* 1) Group Selector */
+html, body { margin: 0; height: 100%; }
+
+/* 2) Element Selectors */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+h1 { margin: 0; text-align: center; }
+p { margin: 8px 0; color: gray; }
+
+/* 3) Fixed Header/Footer (Positioning + z-index) */
+.topbar {
+  position: fixed; top: 0; left: 0; width: 100%;
+  background-color: black; color: white;
+  text-align: center; padding: 14px;
+  z-index: 1000;
+}
+.footer {
+  position: fixed; bottom: 0; left: 0; width: 100%;
+  background-color: black; color: white;
+  text-align: center; padding: 12px;
+  z-index: 1000;
+}
+
+/* 4) Scroll Area (Overflow) */
+.content {
+  position: fixed;
+  top: 95px; bottom: 55px; left: 0; right: 0;
+  overflow: auto;
+  padding: 20px;
+}
+
+/* 5) Nav Links (Inline-block) */
+.nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 6px 8px;
+  margin: 0 6px;
+}
+.nav a:hover { background-color: gray; }
+.active { background-color: gray; }
+
+/* 6) Max Width */
+.page {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* 7) ID Selector */
+#menu-title {
+  background-color: lightgray;
+  padding: 12px;
+  border-left: 6px solid black;
+  margin-bottom: 12px;
+}
+
+/* 8) Menu Item (Display) */
+.item {
+  border-bottom: 1px solid lightgray;
+  padding: 12px 6px;
+  display: block; /* display */
+}
+.price {
+  float: right;
+  font-weight: bold;
+}
+
+/* 9) Table Selectors */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  display: block;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+/* 10) Attribute Selector */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid gray;
+  display: inline-block;
+  box-sizing: border-box;
+}

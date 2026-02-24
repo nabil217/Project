@@ -1,0 +1,146 @@
+/* =========================
+   1) Group Selector
+========================= */
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+/* =========================
+   2) Element Selectors
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  overflow: hidden; /* page scroll is handled by .content */
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 8px 0;
+  color: gray;
+}
+
+/* =========================
+   3) Layout (Positioning + z-index)
+========================= */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  z-index: 1000; /* z-index */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  z-index: 1000; /* z-index */
+}
+
+/* middle part scroll */
+.content {
+  position: fixed;
+  top: 95px;
+  bottom: 55px;
+  left: 0;
+  right: 0;
+  overflow: auto; /* overflow */
+  padding: 20px;
+}
+
+/* =========================
+   4) Navigation (Inline-block + Display)
+========================= */
+.nav a {
+  display: inline-block; /* inline-block */
+  color: white;
+  text-decoration: none;
+  padding: 6px 8px;
+  margin: 0 6px;
+}
+
+.nav a:hover {
+  background-color: gray;
+}
+
+.active {
+  background-color: gray;
+}
+
+/* =========================
+   5) Page Container (Max-width)
+========================= */
+.page {
+  max-width: 900px; /* max-width */
+  margin: auto;
+}
+
+/* =========================
+   6) ID Selector
+========================= */
+#home-hero {
+  background-color: lightgray;
+  padding: 45px 20px;
+  text-align: center;
+  border: 2px solid black; /* box model */
+}
+
+/* =========================
+   7) Simple Button (Display)
+========================= */
+.btn {
+  display: inline-block; /* display */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+/* =========================
+   8) Table Selectors (Required)
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  display: block; /* display */
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid gray; /* box model */
+  padding: 10px;          /* box model */
+}
+
+/* =========================
+   9) Attribute Selectors (Required)
+========================= */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid gray;
+  display: inline-block; /* inline-block */
+  box-sizing: border-box;
+}
